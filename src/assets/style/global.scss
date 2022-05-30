@@ -1,0 +1,107 @@
+:root {
+    --bs-blue: #4e9cff;
+    --bs-indigo: #bba4ff;
+    --bs-purple: #de8cff;
+    --bs-pink: #f34fa0;
+    --bs-red: #ff6060;
+    --bs-orange: #ff9f0c;
+    --bs-yellow: #f9e80d;
+    --bs-green: #1ecc33;
+    --bs-teal: #3cd2a5;
+    --bs-cyan: #30beff;
+    --bs-white: #ffffff;
+    --bs-gray: #526872;
+    --bs-gray-dark: #35434a;
+    --bs-gray-100: #c0cacf;
+    --bs-gray-200: #a8b6bc;
+    --bs-gray-300: #90a2aa;
+    --bs-gray-400: #798e98;
+    --bs-gray-500: #617a86;
+    --bs-gray-600: #526872;
+    --bs-gray-700: #44555e;
+    --bs-gray-800: #35434a;
+    --bs-gray-900: #273136;
+    --bs-default: #a8b6bc;
+    --bs-theme: #3cd2a5;
+    --bs-primary: #4e9cff;
+    --bs-secondary: #798e98;
+    --bs-warning: #ff9f0c;
+    --bs-danger: #ff6060;
+    --bs-success: #3cd2a5;
+    --bs-info: #30beff;
+    --bs-dark: #35434a;
+    --bs-black: #000000;
+    --bs-white: #ffffff;
+    --bs-purple: #de8cff;
+    --bs-indigo: #bba4ff;
+    --bs-red: #ff6060;
+    --bs-pink: #f34fa0;
+    --bs-green: #1ecc33;
+    --bs-yellow: #f9e80d;
+    --bs-teal: #3cd2a5;
+    --bs-muted: #617a86;
+    --bs-light: #c0cacf;
+    --bs-lime: #81f32d;
+    --bs-gray-100: #c0cacf;
+    --bs-gray-200: #a8b6bc;
+    --bs-gray-300: #90a2aa;
+    --bs-gray-400: #798e98;
+    --bs-gray-500: #617a86;
+    --bs-gray-600: #526872;
+    --bs-gray-700: #44555e;
+    --bs-gray-800: #35434a;
+    --bs-gray-900: #273136;
+    --bs-default-rgb: 168, 182, 188;
+    --bs-theme-rgb: 60, 210, 165;
+    --bs-primary-rgb: 78, 156, 255;
+    --bs-secondary-rgb: 121, 142, 152;
+    --bs-warning-rgb: 255, 159, 12;
+    --bs-danger-rgb: 255, 96, 96;
+    --bs-success-rgb: 60, 210, 165;
+    --bs-info-rgb: 48, 190, 255;
+    --bs-dark-rgb: 53, 67, 74;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-purple-rgb: 222, 140, 255;
+    --bs-indigo-rgb: 187, 164, 255;
+    --bs-red-rgb: 255, 96, 96;
+    --bs-pink-rgb: 243, 79, 160;
+    --bs-green-rgb: 30, 204, 51;
+    --bs-yellow-rgb: 249, 232, 13;
+    --bs-teal-rgb: 60, 210, 165;
+    --bs-muted-rgb: 97, 122, 134;
+    --bs-light-rgb: 192, 202, 207;
+    --bs-lime-rgb: 129, 243, 45;
+    --bs-gray-100-rgb: 192, 202, 207;
+    --bs-gray-200-rgb: 168, 182, 188;
+    --bs-gray-300-rgb: 144, 162, 170;
+    --bs-gray-400-rgb: 121, 142, 152;
+    --bs-gray-500-rgb: 97, 122, 134;
+    --bs-gray-600-rgb: 82, 104, 114;
+    --bs-gray-700-rgb: 68, 85, 94;
+    --bs-gray-800-rgb: 53, 67, 74;
+    --bs-gray-900-rgb: 39, 49, 54;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 255, 255, 255;
+    --bs-body-bg-rgb: 39, 49, 54;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Chakra Petch, sans-serif;
+    --bs-body-font-size: 0.875rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: rgba(255, 255, 255, 0.75);
+    --bs-body-bg: #273136;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
