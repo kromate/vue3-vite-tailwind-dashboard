@@ -2,7 +2,7 @@ module.exports = {
 	root: true,
 	env: {
 		browser: true,
-		node: true
+		es2021: true
 	},
 	extends: [
 		'plugin:vue/vue3-essential',
@@ -10,7 +10,7 @@ module.exports = {
 		'@vue/typescript/recommended'
 	],
 	parserOptions: {
-		ecmaVersion: 2020,
+		ecmaVersion: 2021,
 		parser: '@typescript-eslint/parser'
 	},
 	rules: {
@@ -38,12 +38,13 @@ module.exports = {
 		],
 		'@typescript-eslint/no-use-before-define': 'off',
 		'no-tabs': 'off',
-		'no-var': 'off',
+		'vue/no-reserved-component-names': 'off',
+		'no-var': 'error',
 		'no-use-before-define': 'off',
-		indent: ['off', 'tab', { SwitchCase: 1 }],
+		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'no-mixed-spaces-and-tabs': ['off', 'smart-tabs'],
-		semi: ['off', 'never'],
-		quotes: ['off', 'single'],
+		semi: ['error', 'never'],
+		quotes: ['error', 'single'],
 		'prefer-const': ['error'],
 		'arrow-parens': ['error', 'always'],
 		'no-return-assign': 'off',

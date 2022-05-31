@@ -1,6 +1,6 @@
 <template>
   <div>
-<top-bar/>
+    <top-bar/>
   </div>
 </template>
 

@@ -12,7 +12,8 @@ export default defineConfig({
     Pages({
       dirs: 'src/views',
       routeStyle: 'nuxt',
-      extendRoute: (route: any) => {
+      extendRoute: (route: any) =>
+      {
         const path = route.path.split('/')
         const lastIndex = path.length - 1
         if (path[lastIndex] && path[lastIndex].includes(':')) path[lastIndex] = path[lastIndex] + '/'

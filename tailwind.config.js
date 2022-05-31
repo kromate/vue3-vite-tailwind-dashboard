@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        headerBg:'rgba(29, 40, 53, 0.95)'
+        headerBg: 'rgba(29, 40, 53, 0.95)',
+        primary:'#3cd2a5'
       }
     },
   },
