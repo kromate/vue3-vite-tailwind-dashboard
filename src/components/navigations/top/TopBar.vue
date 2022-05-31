@@ -21,7 +21,7 @@
         <i class="las la-search text-2xl -rotate-90"></i>
       </button>
       <button id="menuBtn">
-        <i class="las la-box text-2xl"></i>
+        <i class="las la-table text-2xl"></i>
       </button>
       <button id="menuBtn">
         <i class="las la-bell text-2xl"></i>
