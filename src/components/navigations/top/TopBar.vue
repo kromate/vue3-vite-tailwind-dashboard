@@ -34,7 +34,7 @@
             alt="profile picture"
             class="h-8 w-8 rounded-full mr-3"
           />
-          <span class="text-[15px] font-medium">onichan@otaku.com</span>
+          <span class="text-[15px] font-medium pc">onichan@otaku.com</span>
         </router-link>
       </div>
     </div>

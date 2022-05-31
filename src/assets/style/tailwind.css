@@ -9,11 +9,14 @@
 *{
     font-family: 'Lato', sans-serif;
 }
-/* @layer utilities{
-    .card{
-        @apply 
+@layer utilities{
+    .pc{
+        @apply md:flex hidden
     }
-} */
+    .mb{
+        @apply md:hidden flex
+    }
+}
 
 
 
