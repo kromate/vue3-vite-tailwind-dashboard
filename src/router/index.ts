@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 // @ts-ignore
 import routes from '~pages'
 
-console.log(routes);
 
 const router = createRouter({ history: createWebHistory(), routes })
 
