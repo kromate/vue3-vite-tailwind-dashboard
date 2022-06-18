@@ -1,19 +1,29 @@
 <template>
-  <aside>
+  <aside class="aside">
     <div class="flex flex-col">
       <h3 class="menu_header">Navigation</h3>
       <span class="menu_item">
-        <i class="las la-microchip text-xl mr-3"></i>
-        <router-link to="/">Dashboard</router-link>
+        <router-link to="/">
+          <i class="las la-microchip text-xl mr-3" />
+          Dashboard</router-link
+        >
       </span>
       <span class="menu_item">
-        <i class="las la-chart-bar text-xl mr-3"></i>
-        <router-link to="/">Analytics</router-link>
+        <router-link to="/">
+          <i class="las la-chart-bar text-xl mr-3" />
+          Analytics</router-link
+        >
       </span>
-      <span class="menu_item">
-        <i class="las la-envelope text-xl mr-3"></i>
-        <router-link to="/">Email</router-link>
-      </span>
+
+      <div>
+        <span class="menu_item">
+          <router-link to="/">
+            <i class="las la-envelope text-xl mr-3" />
+            Email
+            <i class="las la-sort-down text-md ml-auto"
+          /></router-link>
+        </span>
+      </div>
     </div>
   </aside>
 </template>

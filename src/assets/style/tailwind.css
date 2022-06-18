@@ -22,6 +22,22 @@
     .menu_item{
         @apply text-sm relative py-[0.1rem] px-4 text-[#ffffff7f] hover:text-white flex items-center transition-all duration-200 ease-in-out justify-start
     }
+    a{
+        @apply flex items-center w-full
+    }
+    .aside{
+        /* @apply flex flex-col items-center justify-center */
+
+            width: 16.875rem;
+    bottom: 0;
+    position: fixed;
+    top: 3.25rem;
+    z-index: 1010;
+    left: 0;
+    }
+    .app{
+        
+    }
 }
 
 
