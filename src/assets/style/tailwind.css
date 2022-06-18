@@ -25,20 +25,16 @@
     .menu_link {
         @apply flex items-center w-full;
     }
+    .sub_menu_link {
+        @apply flex items-center ml-12 text-[#ffffff7f] hover:text-white ;
+    }
     .aside {
-        /* @apply flex flex-col items-center justify-center */
-
-        width: 16.875rem;
-        bottom: 0;
-        position: fixed;
-        top: 3.25rem;
-        z-index: 1010;
-        left: 0;
+        @apply fixed w-[16.875rem] top-13 z-[1010] left-0 bottom-0
+    
     }
     .app {
         height: calc(100vh - 3.25rem);
-        flex: 1;
-        margin-left: 16.875rem;
-        padding: 1rem !important;
+        @apply flex-1 ml-[16.875rem] p-4
+     
     }
 }
