@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 *{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 @layer utilities{
     .pc{
@@ -18,7 +18,9 @@
     }
     .menu_header{
         @apply text-[.65625rem] text-[#ffffff4d] font-semibold p-4 pb-2
-
+    }
+    .menu_item{
+        @apply text-sm relative py-[0.1rem] px-4 text-[#ffffff7f] hover:text-white flex items-center transition-all duration-200 ease-in-out justify-start
     }
 }
 

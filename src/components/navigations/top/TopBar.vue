@@ -1,11 +1,13 @@
 <template>
   <div
     id="header"
-    class="h-12 bg-headerBg fixed inset-x-0 top-0 flex z-50 px-4 items-center justify-between"
+    class="h-13 bg-headerBg fixed inset-x-0 top-0 flex z-50 px-4 items-center justify-between"
   >
     <div id="left-side" class="flex items-center">
-      <button id="menuBtn">
-        <i class="las la-bars text-2xl"></i>
+      <button id="menuBtn" class="transition-all duration-150">
+        <i
+          class="las la-bars text-2xl text-gray-500 hover:text-white transition-all duration-500"
+        ></i>
       </button>
 
       <div class="ml-8 pc">
