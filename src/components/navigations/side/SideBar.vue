@@ -24,15 +24,9 @@
           </div>
         </span>
 
-        <transition-group
-          appear
-          @before-enter="beforeEnter"
-          @enter="enter"
-          @leave="leave"
-          v-if="show"
-        >
-          <router-link to="/" class="sub_menu_link" :key="1">Analytics</router-link>
-          <router-link to="/" class="sub_menu_link" :key="2">Analytics</router-link>
+        <transition-group @before-enter="beforeEnter" @enter="enter" @leave="leave" v-if="show">
+          <router-link to="/" class="sub_menu_link" :key="1" :data-index="1">Analytics</router-link>
+          <router-link to="/" class="sub_menu_link" :key="2" :data-index="2">Analytics</router-link>
         </transition-group>
       </div>
     </div>
@@ -51,10 +45,21 @@ const enter = (el: any, done: any) => {
 		opacity: 1,
 		x: 0,
 		duration: 0.3,
-		stagger: 0.2,
+		stagger: 0.1,
 		onComplete: done,
-		ease: "back.out",
+		delay: el.dataset.index * 0.1,
 	});
+};
+const leave = (el: any, done: any) => {
+	console.log("leaving o.....");
+	// gsap.to(".sub_menu_link", {
+	// 	opacity: 1,
+	// 	x: 0,
+	// 	duration: 0.3,
+	// 	stagger: 0.1,
+	// 	onComplete: done,
+	// 	delay: el.dataset.index * 0.1,
+	// });
 };
 
 const show = ref(false);
