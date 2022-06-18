@@ -44,26 +44,7 @@
 <script setup lang="ts">
 import { gsap } from "gsap";
 import { ref } from "vue";
-
-const MenuList = [
-	{
-		name: "Navigation",
-		subs: [
-			{ name: "Dashboard", icon: "las la-microchip", link: "/" },
-			{ name: "Analytics", icon: "las la-chart-bar", link: "/" },
-			{
-				name: "Email",
-				icon: "las la-envelope",
-				hasSub: true,
-				subs: [
-					{ name: "Inbox", link: "/" },
-					{ name: "Compose", link: "/" },
-					{ name: "Detail", link: "/" },
-				],
-			},
-		],
-	},
-];
+import { MenuList } from "@/composables/navigation/useSidebar";
 
 const beforeEnter = (el: any) => {
 	el.style.opacity = 0;

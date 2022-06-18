@@ -14,7 +14,7 @@
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
       "paths": {
-      "@/*": ["./.vscode/src/*"]
+       "@/*": ["src/*"]
     },
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
