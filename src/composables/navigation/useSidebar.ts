@@ -34,6 +34,69 @@ export const MenuList = [
 					{ name: "Inbox", link: "/" },
 				],
 			},
+			{
+				name: "UI Kits", 
+				icon:"las la-gamepad",
+                hasSub: true,
+                show:ref(false),
+				subs: [
+					{ name: "Inbox", link: "/" },
+				],
+			},
+			{
+				name: "Forms", 
+				icon:"las la-pen-alt",
+                hasSub: true,
+                show:ref(false),
+				subs: [
+					{ name: "Inbox", link: "/" },
+				],
+			},
+			{
+				name: "Tables", 
+				icon:"las la-table",
+                hasSub: true,
+                show:ref(false),
+				subs: [
+					{ name: "Inbox", link: "/" },
+				],
+			},
+			{
+				name: "Charts", 
+				icon:"las la-chart-pie",
+                hasSub: true,
+                show:ref(false),
+				subs: [
+					{ name: "Inbox", link: "/" },
+				],
+			},
+			{
+				name: "Map", 
+				icon:"las la-compass",
+                hasSub: true,
+                show:ref(false),
+				subs: [
+					{ name: "Inbox", link: "/" },
+				],
+			},
+			{
+				name: "Layout", 
+				icon:"las la-layer-group",
+                hasSub: true,
+                show:ref(false),
+				subs: [
+					{ name: "Inbox", link: "/" },
+				],
+			},
+			{
+				name: "Pages", 
+				icon:"las la-file",
+                hasSub: true,
+                show:ref(false),
+				subs: [
+					{ name: "Inbox", link: "/" },
+				],
+			},
 		],
 	},
 	{
