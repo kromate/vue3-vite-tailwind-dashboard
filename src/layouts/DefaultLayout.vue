@@ -2,7 +2,9 @@
   <TopBar />
   <div class="flex pt-12">
     <SideBar />
-    <slot class="app" />
+    <main class="app">
+      <slot />
+    </main>
   </div>
 </template>
 
