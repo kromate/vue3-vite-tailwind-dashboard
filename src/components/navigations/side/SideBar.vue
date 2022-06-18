@@ -12,7 +12,7 @@
         </span>
 
         <div class="flex flex-col cursor-pointer gap-1.5" v-else>
-          <span class="menu_item" @click="toggle(subItem.show, idx)">
+          <span class="menu_item" @click="toggle(subItem.show)">
             <div class="menu_link">
               <i :class="[subItem.icon , 'text-xl mr-3']" />
               {{subItem.name}}
@@ -30,7 +30,8 @@
               v-for="(miniSubItem, ids) in subItem.subs"
               :key="ids"
               :to="miniSubItem.link"
-              :class="[`${idx+'ods'}`, 'sub_menu_link']"
+              class="sub_menu_link"
+              :id="idx"
               :data-index="ids"
             >{{miniSubItem.name}}</router-link>
           </TransitionGroup>
@@ -49,10 +50,9 @@ import {
 	enter,
 } from "@/composables/navigation/useSidebar";
 
-const toggle = (show: any, idx: any) => {
-	console.log(idx);
+const toggle = (show: any) => {
 	if (show.value) {
-		gsap.to(`.sub_menu_link.${idx}`, {
+		gsap.to(".sub_menu_link", {
 			opacity: 1,
 			x: -120,
 			duration: 0.4,

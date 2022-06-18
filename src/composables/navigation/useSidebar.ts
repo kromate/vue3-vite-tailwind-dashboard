@@ -21,24 +21,24 @@ export const MenuList = [
 			},
 		],
 	},
-	{
-		name: "Components",
-		subs: [
-			{ name: "Dashboard", icon: "las la-microchip", link: "/" },
-			{ name: "Analytics", icon: "las la-chart-bar", link: "/" },
-			{
-				name: "Email",
-				icon: "las la-envelope",
-                hasSub: true,
-                show:ref(false),
-				subs: [
-					{ name: "Inbox", link: "/" },
-					{ name: "Compose", link: "/" },
-					{ name: "Detail", link: "/" },
-				],
-			},
-		],
-	},
+	// {
+	// 	name: "Components",
+	// 	subs: [
+	// 		{ name: "Dashboard", icon: "las la-microchip", link: "/" },
+	// 		{ name: "Analytics", icon: "las la-chart-bar", link: "/" },
+	// 		{
+	// 			name: "Email",
+	// 			icon: "las la-envelope",
+    //             hasSub: true,
+    //             show:ref(false),
+	// 			subs: [
+	// 				{ name: "Inbox", link: "/" },
+	// 				{ name: "Compose", link: "/" },
+	// 				{ name: "Detail", link: "/" },
+	// 			],
+	// 		},
+	// 	],
+	// },
 ];
 
 
