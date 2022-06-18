@@ -39,6 +39,16 @@ export const MenuList = [
 			},
 		],
 	},
+	{
+		name: "Users",
+		subs: [
+			{ name: "Profile", icon: "las la-user-friends", link: "/" },
+			{ name: "Calendar", icon: "las la-calendar", link: "/" },
+			{ name: "Settings", icon: "las la-cog", link: "/" },
+			{ name: "Helpers", icon: "las la-gem", link: "/" },
+		
+		],
+	},
 ];
 
 
