@@ -24,17 +24,14 @@ export const MenuList = [
 	{
 		name: "Components",
 		subs: [
-			{ name: "Dashboard", icon: "las la-microchip", link: "/" },
-			{ name: "Analytics", icon: "las la-chart-bar", link: "/" },
+			{ name: "Widget", icon: "las la-columns", link: "/" },
 			{
-				name: "Email",
-				icon: "las la-envelope",
+				name: "POS System", 
+				icon:"las la-shopping-bag",
                 hasSub: true,
                 show:ref(false),
 				subs: [
 					{ name: "Inbox", link: "/" },
-					{ name: "Compose", link: "/" },
-					{ name: "Detail", link: "/" },
 				],
 			},
 		],
