@@ -13,8 +13,12 @@
     .pc{
         @apply md:flex hidden
     }
-    .mb{
+    .mobile{
         @apply md:hidden flex
+    }
+    .menu_header{
+        @apply text-[.65625rem] text-[#ffffff4d] font-semibold p-4 pb-2
+
     }
 }
 

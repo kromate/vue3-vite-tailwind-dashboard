@@ -1,7 +1,7 @@
 <template>
   <div
     id="header"
-    class="h-14 bg-headerBg fixed inset-x-0 top-0 flex z-50 px-4 items-center justify-between"
+    class="h-12 bg-headerBg fixed inset-x-0 top-0 flex z-50 px-4 items-center justify-between"
   >
     <div id="left-side" class="flex items-center">
       <button id="menuBtn">
@@ -10,7 +10,9 @@
 
       <div class="ml-8 pc">
         <router-link to="#" class="flex items-center">
-          <span class="logo font-semibold h-7 w-7 text-primary text-base">K</span>
+          <span class="logo font-semibold h-7 w-7 text-primary text-base"
+            >K</span
+          >
           <span class="text-[15px] font-medium">KROM ADMIN</span>
         </router-link>
       </div>
