@@ -12,7 +12,7 @@
         </span>
 
         <div class="flex flex-col cursor-pointer gap-1.5" v-else>
-          <span class="menu_item" @click="toggle(subItem.show)">
+          <span class="menu_item" @click="subItem.show.value = !subItem.show.value">
             <div class="menu_link">
               <i :class="[subItem.icon , 'text-xl mr-3']" />
               {{subItem.name}}
@@ -31,7 +31,6 @@
               :key="ids"
               :to="miniSubItem.link"
               class="sub_menu_link"
-              :id="idx"
               :data-index="ids"
             >{{miniSubItem.name}}</router-link>
           </TransitionGroup>
@@ -49,25 +48,6 @@ import {
 	beforeEnter,
 	enter,
 } from "@/composables/navigation/useSidebar";
-
-const toggle = (show: any) => {
-	if (show.value) {
-		gsap.to(".sub_menu_link", {
-			opacity: 1,
-			x: -120,
-			duration: 0.4,
-			stagger: -0.1,
-			onComplete: change(show) as any,
-			// delay: el.dataset.index * 0.1,
-		});
-	} else {
-		show.value = !show.value;
-	}
-};
-
-const change = (show: any) => {
-	show.value = !show.value;
-};
 </script>
 
 <style scoped></style>
