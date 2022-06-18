@@ -1,14 +1,9 @@
 <template>
-  <div>
-    <top-bar/>
-  </div>
+  <DefaultLayout> Hello World! </DefaultLayout>
 </template>
 
 <script setup lang="ts">
-import TopBar from '@/components/navigations/top/TopBar.vue';
-
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
