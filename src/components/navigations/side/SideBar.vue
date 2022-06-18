@@ -12,7 +12,7 @@
         </span>
 
         <div class="flex flex-col cursor-pointer gap-1.5" v-else>
-          <span class="menu_item" @click="toggle">
+          <span class="menu_item" @click="toggle(subItem.show, idx)">
             <div class="menu_link">
               <i :class="[subItem.icon , 'text-xl mr-3']" />
               {{subItem.name}}
@@ -24,14 +24,13 @@
             appear
             @before-enter="beforeEnter"
             @enter="enter"
-            @leave="leave"
-            v-if="show"
+            v-if="subItem.show.value"
           >
             <router-link
               v-for="(miniSubItem, ids) in subItem.subs"
               :key="ids"
               :to="miniSubItem.link"
-              class="sub_menu_link"
+              :class="[`${idx+'ods'}`, 'sub_menu_link']"
               :data-index="ids"
             >{{miniSubItem.name}}</router-link>
           </TransitionGroup>
@@ -44,45 +43,21 @@
 <script setup lang="ts">
 import { gsap } from "gsap";
 import { ref } from "vue";
-import { MenuList } from "@/composables/navigation/useSidebar";
+import {
+	MenuList,
+	beforeEnter,
+	enter,
+} from "@/composables/navigation/useSidebar";
 
-const beforeEnter = (el: any) => {
-	el.style.opacity = 0;
-	el.style.transform = "translateX(-100px)";
-};
-const enter = (el: any, done: any) => {
-	gsap.to(".sub_menu_link", {
-		opacity: 1,
-		x: 0,
-		duration: 0.3,
-		stagger: 0.1,
-		onComplete: done,
-		delay: el.dataset.index * 0.1,
-	});
-};
-const leave = (el: any, done: any) => {
-	console.log("leaving o.....");
-	done();
-	gsap.to(".sub_menu_link", {
-		opacity: 1,
-		x: -100,
-		duration: 0.3,
-		stagger: 0.1,
-		onComplete: done,
-		delay: el.dataset.index * 0.1,
-	});
-};
-
-const show = ref(false);
-
-const toggle = () => {
+const toggle = (show: any, idx: any) => {
+	console.log(idx);
 	if (show.value) {
-		gsap.to(".sub_menu_link", {
+		gsap.to(`.sub_menu_link.${idx}`, {
 			opacity: 1,
 			x: -120,
-			duration: 0.3,
+			duration: 0.4,
 			stagger: -0.1,
-			onComplete: change,
+			onComplete: change(show) as any,
 			// delay: el.dataset.index * 0.1,
 		});
 	} else {
@@ -90,7 +65,7 @@ const toggle = () => {
 	}
 };
 
-const change = () => {
+const change = (show: any) => {
 	show.value = !show.value;
 };
 </script>
