@@ -1,35 +1,41 @@
 <template>
   <aside class="aside">
-    <div class="flex flex-col" v-for="(item, ind) in MenuList" :key="ind">
+    <div class="flex flex-col gap-1.5" v-for="(item, ind) in MenuList" :key="ind">
       <h3 class="menu_header">{{item.name}}</h3>
-      <div>
-        <span class="menu_item" v-for="(subItem, idx) in item.subs" :key="idx">
+
+      <div v-for="(subItem, idx) in item.subs" :key="idx">
+        <span class="menu_item" v-if="!subItem.subs">
           <router-link :to="subItem.link" class="menu_link">
             <i :class="[subItem.icon , 'text-xl mr-3']" />
             {{subItem.name}}
           </router-link>
         </span>
-      </div>
 
-      <div class="flex flex-col cursor-pointer">
-        <span class="menu_item" @click="toggle">
-          <div class="menu_link">
-            <i class="las la-envelope text-xl mr-3" />
-            Email
-            <i class="las la-sort-down text-md ml-auto" />
-          </div>
-        </span>
+        <div class="flex flex-col cursor-pointer gap-1.5" v-else>
+          <span class="menu_item" @click="toggle">
+            <div class="menu_link">
+              <i :class="[subItem.icon , 'text-xl mr-3']" />
+              {{subItem.name}}
+              <i class="las la-sort-down text-md ml-auto" />
+            </div>
+          </span>
 
-        <TransitionGroup
-          appear
-          @before-enter="beforeEnter"
-          @enter="enter"
-          @leave="leave"
-          v-if="show"
-        >
-          <router-link to="/" class="sub_menu_link" :key="1" :data-index="1">Analytics</router-link>
-          <router-link to="/" class="sub_menu_link" :key="2" :data-index="2">Analytics</router-link>
-        </TransitionGroup>
+          <TransitionGroup
+            appear
+            @before-enter="beforeEnter"
+            @enter="enter"
+            @leave="leave"
+            v-if="show"
+          >
+            <router-link
+              v-for="(miniSubItem, ids) in subItem.subs"
+              :key="ids"
+              :to="miniSubItem.link"
+              class="sub_menu_link"
+              :data-index="ids"
+            >{{miniSubItem.name}}</router-link>
+          </TransitionGroup>
+        </div>
       </div>
     </div>
   </aside>
@@ -48,11 +54,11 @@ const MenuList = [
 			{
 				name: "Email",
 				icon: "las la-envelope",
-				link: "/",
 				hasSub: true,
 				subs: [
-					{ name: "Analytics", link: "/" },
-					{ name: "Analytics", link: "/" },
+					{ name: "Inbox", link: "/" },
+					{ name: "Compose", link: "/" },
+					{ name: "Detail", link: "/" },
 				],
 			},
 		],
