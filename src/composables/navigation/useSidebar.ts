@@ -31,7 +31,11 @@ export const MenuList = [
                 hasSub: true,
                 show:ref(false),
 				subs: [
-					{ name: "Inbox", link: "/" },
+                    { name: "Customer Order", link: "/" },
+                    { name: "Kitchen Order", link: "/" },
+                    { name: "Counter Checkout", link: "/" },
+                    { name: "Table Booking", link: "/" },
+                    { name: "Menu Stock", link: "/" },
 				],
 			},
 			{
