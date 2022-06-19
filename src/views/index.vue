@@ -1,10 +1,18 @@
 <template>
   <DefaultLayout>
     <div class="row">
-      <div class="card h-52 w-1/4"></div>
-      <div class="card h-52 w-1/4"></div>
-      <div class="card h-52 w-1/4"></div>
-      <div class="card h-52 w-1/4"></div>
+      <div class="h-52 w-1/4">
+        <div class="card">Hello</div>
+      </div>
+      <div class="h-52 w-1/4">
+        <div class="card">Hello</div>
+      </div>
+      <div class="h-52 w-1/4">
+        <div class="card">Hello</div>
+      </div>
+      <div class="h-52 w-1/4">
+        <div class="card">Hello</div>
+      </div>
     </div>
   </DefaultLayout>
 </template>

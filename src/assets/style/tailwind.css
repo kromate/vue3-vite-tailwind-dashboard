@@ -35,6 +35,11 @@
     .app {
         height: calc(100vh - 3.25rem);
         @apply flex-1 ml-[16.875rem] p-4
-     
+    }
+    .card{
+        @apply bg-white h-full
+    }
+    .row{
+        @apply flex flex-wrap 
     }
 }
