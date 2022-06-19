@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+  width: 1.5px; /* Remove scrollbar space */
+  height: 6px; /* Remove scrollbar space */
+  background: #7483bf4e; /* Optional: just make scrollbar invisible */
+    opacity: 0;
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #72ffb618;
+  border-radius: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
 html {
     height: 100%;
     background-color: #273136;

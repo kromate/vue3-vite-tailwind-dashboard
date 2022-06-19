@@ -29,7 +29,7 @@
         @apply flex items-center ml-12 text-[#ffffff7f] hover:text-white ;
     }
     .aside {
-        @apply fixed w-[16.875rem] top-13 z-[1010] left-0 bottom-0
+        @apply fixed w-[16.875rem] top-13 z-[1010] left-0 bottom-0 overflow-y-auto
     
     }
     .app {

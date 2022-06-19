@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.6.0",
+    "apexcharts": "^3.35.3",
     "gsap": "^3.10.4",
     "unplugin-vue-components": "^0.19.6",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vue3-apexcharts": "^1.4.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",

@@ -1,6 +1,6 @@
 <template>
   <aside class="aside">
-    <div class="flex flex-col gap-1.5" v-for="(item, ind) in MenuList" :key="ind">
+    <div class="flex flex-col" v-for="(item, ind) in MenuList" :key="ind">
       <h3 class="menu_header">{{item.name}}</h3>
 
       <div v-for="(subItem, idx) in item.subs" :key="idx">
