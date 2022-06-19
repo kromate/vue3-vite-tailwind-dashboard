@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
-import Card from "@/"
+import Card from "@/components/core/Card.vue";
 import { onMounted } from "vue";
 </script>
 
