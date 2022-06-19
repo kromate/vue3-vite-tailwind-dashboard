@@ -26,20 +26,73 @@
         @apply flex items-center w-full;
     }
     .sub_menu_link {
-        @apply flex items-center ml-12 text-[#ffffff7f] hover:text-white ;
+        @apply flex items-center ml-12 text-[#ffffff7f] hover:text-white;
     }
     .aside {
-        @apply fixed w-[16.875rem] top-13 z-[1010] left-0 bottom-0 overflow-y-auto
-    
+        @apply fixed w-[16.875rem] top-13 z-[1010] left-0 bottom-0 overflow-y-auto;
     }
     .app {
         height: calc(100vh - 3.25rem);
-        @apply flex-1 ml-[16.875rem] p-4
+        @apply flex-1 ml-[16.875rem] p-4;
     }
-    .card{
-        @apply bg-white h-full
+    .card {
+        --bs-border-color: #ffffff;
+        position: relative;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+        margin-bottom: 1rem !important;
+        --bs-card-spacer-y: 1rem;
+        --bs-card-spacer-x: 1rem;
+        --bs-card-title-spacer-y: 0.5rem;
+        --bs-card-border-width: 1px;
+        --bs-card-border-color: rgba(255, 255, 255, 0.3);
+        --bs-card-border-radius: 0;
+        --bs-card-inner-border-radius: 0;
+        --bs-card-cap-padding-y: 0.55rem;
+        --bs-card-cap-padding-x: 1rem;
+        --bs-card-cap-bg: none;
+        --bs-card-bg: none;
+        --bs-card-img-overlay-padding: 1rem;
+        --bs-card-group-margin: 8px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0px;
+        height: var(--bs-card-height);
+        overflow-wrap: break-word;
+        background-color: var(--bs-card-bg);
+        background-clip: border-box;
+        border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+        border-radius: var(--bs-card-border-radius);
     }
-    .row{
-        @apply flex flex-wrap 
+
+    .card:not(.border-0)::before {
+        left: 15px;
+        right: 15px;
+        top: 0px;
+        bottom: 0px;
+        opacity: 0.3;
+        border-top: 1px solid var(--bs-border-color);
+        border-bottom: 1px solid var(--bs-border-color);
+    }
+    .card::after,
+    .card::before {
+        content: '';
+        position: absolute;
+    }
+
+    .card:not(.border-0)::after {
+        top: 15px;
+        bottom: 15px;
+        left: 0px;
+        right: 0px;
+        opacity: 0.3;
+        border-left: 1px solid var(--bs-border-color);
+        border-right: 1px solid var(--bs-border-color);
+    }
+    .row {
+        @apply flex flex-wrap;
     }
 }
