@@ -44,7 +44,13 @@ export const MenuList = [
                 hasSub: true,
                 show:ref(false),
 				subs: [
-					{ name: "Inbox", link: "/" },
+					{ name: "Bootstrap", link: "/" },
+					{ name: "Buttons", link: "/" },
+					{ name: "Card", link: "/" },
+					{ name: "Icons", link: "/" },
+					{ name: "Modal & Notification", link: "/" },
+					{ name: "Typography", link: "/" },
+					{ name: "Tabs & Accordions", link: "/" },
 				],
 			},
 			{
