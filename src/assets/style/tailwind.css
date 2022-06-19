@@ -46,8 +46,6 @@
         --bs-card-spacer-y: 1rem;
         --bs-card-spacer-x: 1rem;
         --bs-card-title-spacer-y: 0.5rem;
-        --bs-card-border-width: 1px;
-        --bs-card-border-color: rgba(255, 255, 255, 0.3);
         --bs-card-border-radius: 0;
         --bs-card-inner-border-radius: 0;
         --bs-card-cap-padding-y: 0.55rem;
@@ -64,7 +62,6 @@
         overflow-wrap: break-word;
         background-color: var(--bs-card-bg);
         background-clip: border-box;
-        border: var(--bs-card-border-width) solid var(--bs-card-border-color);
         border-radius: var(--bs-card-border-radius);
     }
 
