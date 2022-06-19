@@ -3094,11 +3094,6 @@ jest-worker@^26.2.1:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jquery@>=1.5, jquery@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
-  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
-
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -3169,13 +3164,6 @@ jsonpointer@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/jsonpointer/-/jsonpointer-5.0.0.tgz"
   integrity sha512-PNYZIdMjVIvVgDSYKTT63Y+KZ6IZvGRNNWcxwD+GNnUz1MKPfv30J8ueCjdwcN0nDx2SlshgyB7Oy0epAzVRRg==
-
-jvectormap@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/jvectormap/-/jvectormap-2.0.4.tgz#7913e1577285c156eda156430f90ed5ada068e4b"
-  integrity sha512-rIgUaNbT6eUuKxba+q265mM3xnjC0hzKlQsM842yKW+o+BMiV1MWUY1YMq+Q+ukyNuGJNRC58EMRnv+/hJSNcQ==
-  dependencies:
-    jquery ">=1.5"
 
 kind-of@^6.0.3:
   version "6.0.3"
