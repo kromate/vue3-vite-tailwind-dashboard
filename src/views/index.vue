@@ -1,16 +1,16 @@
 <template>
   <DefaultLayout>
     <div class="row">
-      <div class="h-52 w-1/4 p-1">
+      <div class="h-52 cols-4 p-2">
         <Card>Hello</Card>
       </div>
-      <div class="h-52 w-1/4 p-1">
+      <div class="h-52 cols-4 p-2">
         <Card>Hello</Card>
       </div>
-      <div class="h-52 w-1/4 p-1">
+      <div class="h-52 cols-4 p-2">
         <Card>Hello</Card>
       </div>
-      <div class="h-52 w-1/4 p-1">
+      <div class="h-52 cols-4 p-2">
         <Card>Hello</Card>
       </div>
     </div>
