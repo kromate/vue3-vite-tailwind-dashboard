@@ -42,4 +42,7 @@
     .cols-4 {
         @apply w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-2;
     }
+    .cols-2 {
+        @apply w-full xl:w-1/2 p-2;
+    }
 }

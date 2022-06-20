@@ -13,6 +13,20 @@
       <div class="h-full cols-4">
         <Card>Hello</Card>
       </div>
+
+      <div class="h-full cols-2">
+        <Card>Hello</Card>
+      </div>
+      <div class="h-full cols-2">
+        <Card>Hello</Card>
+      </div>
+
+      <div class="h-full cols-2">
+        <Card>Hello</Card>
+      </div>
+      <div class="h-full cols-2">
+        <Card>Hello</Card>
+      </div>
     </div>
   </DefaultLayout>
 </template>
