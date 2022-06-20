@@ -1,21 +1,24 @@
 <template>
-  <aside class="aside">
+  <aside class="aside hidden md:block">
     <div class="flex flex-col" v-for="(item, ind) in MenuList" :key="ind">
-      <h3 class="menu_header">{{item.name}}</h3>
+      <h3 class="menu_header">{{ item.name }}</h3>
 
       <div v-for="(subItem, idx) in item.subs" :key="idx">
         <span class="menu_item" v-if="!subItem.subs">
           <router-link :to="subItem.link" class="menu_link">
-            <i :class="[subItem.icon , 'text-xl mr-3']" />
-            {{subItem.name}}
+            <i :class="[subItem.icon, 'text-xl mr-3']" />
+            {{ subItem.name }}
           </router-link>
         </span>
 
         <div class="flex flex-col cursor-pointer gap-1.5" v-else>
-          <span class="menu_item" @click="subItem.show.value = !subItem.show.value">
+          <span
+            class="menu_item"
+            @click="subItem.show.value = !subItem.show.value"
+          >
             <div class="menu_link">
-              <i :class="[subItem.icon , 'text-xl mr-3']" />
-              {{subItem.name}}
+              <i :class="[subItem.icon, 'text-xl mr-3']" />
+              {{ subItem.name }}
               <i class="las la-sort-down text-md ml-auto" />
             </div>
           </span>
@@ -32,7 +35,8 @@
               :to="miniSubItem.link"
               class="sub_menu_link"
               :data-index="ids"
-            >{{miniSubItem.name}}</router-link>
+              >{{ miniSubItem.name }}</router-link
+            >
           </TransitionGroup>
         </div>
       </div>
@@ -44,9 +48,9 @@
 import { gsap } from "gsap";
 import { ref } from "vue";
 import {
-	MenuList,
-	beforeEnter,
-	enter,
+  MenuList,
+  beforeEnter,
+  enter,
 } from "@/composables/navigation/useSidebar";
 </script>
 
