@@ -7,7 +7,7 @@
       </div>
       <div class="flex w-full items-center justify-between">
         <h3 class="font-bold text-white">4.2m</h3>
-        <div class="w">
+        <div class="w-[130px] h-10">
           <BarChart />
         </div>
       </div>

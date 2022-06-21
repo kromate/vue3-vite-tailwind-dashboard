@@ -47,6 +47,7 @@
 .card::before {
   content: "";
   position: absolute;
+  z-index: -1;
 }
 
 .card:not(.border-0)::after {
@@ -71,6 +72,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 .card .card-arrow-bottom-left,
 .card .card-arrow-bottom-right,
