@@ -62,7 +62,7 @@
   flex: 1 1 auto;
   padding: 1rem 1rem;
   /* padding: 0.5rem 0.7rem; */
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
 }
 
 .card .card-arrow {

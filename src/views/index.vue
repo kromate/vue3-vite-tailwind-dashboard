@@ -1,18 +1,7 @@
 <template>
   <DefaultLayout>
     <div class="row">
-      <div class="h-full cols-4">
-        <Card>Hello</Card>
-      </div>
-      <div class="h-full cols-4">
-        <Card>Hello</Card>
-      </div>
-      <div class="h-full cols-4">
-        <Card>Hello</Card>
-      </div>
-      <div class="h-full cols-4">
-        <Card>Hello</Card>
-      </div>
+      <FirstRow />
 
       <div class="h-full cols-2">
         <Card>Hello</Card>
@@ -34,7 +23,7 @@
 <script setup lang="ts">
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import Card from "@/components/core/Card.vue";
-import { onMounted } from "vue";
+import FirstRow from "@/components/pages/Dashboard/FirstRow.vue";
 </script>
 
 <style scoped></style>
