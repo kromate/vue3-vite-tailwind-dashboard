@@ -2,7 +2,7 @@
   <div class="h-full cols-4">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
-        <span class="font-semibold uppercase">SITE VISITORS</span>
+        <span class="card_title_1">SITE VISITORS</span>
         <i class="las la-expand" />
       </div>
       <div class="flex w-full items-center justify-between mb-3">
@@ -27,7 +27,7 @@
   <div class="h-full cols-4">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
-        <span class="font-semibold uppercase">STORE SALES</span>
+        <span class="card_title_1">STORE SALES</span>
         <i class="las la-expand" />
       </div>
       <div class="flex w-full items-center justify-between mb-3">
@@ -52,7 +52,7 @@
   <div class="h-full cols-4">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
-        <span class="font-semibold uppercase">NEW MEMBERS</span>
+        <span class="card_title_1">NEW MEMBERS</span>
         <i class="las la-expand" />
       </div>
       <div class="flex w-full items-center justify-between mb-3">
@@ -77,7 +77,7 @@
   <div class="h-full cols-4">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
-        <span class="font-semibold uppercase">BANDWIDTH</span>
+        <span class="card_title_1">BANDWIDTH</span>
         <i class="las la-expand" />
       </div>
       <div class="flex w-full items-center justify-between mb-3">
