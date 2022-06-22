@@ -1,40 +1,46 @@
 <template>
   <div class="h-full cols-2">
     <Card>
-      <div class="flex w-full items-center justify-between mb-3">
+      <div class="flex w-full items-center justify-between mb-6">
         <span class="card_title_1">TOP PRODUCTS</span>
         <i class="las la-expand" />
       </div>
 
-      <div class="flex flex-col w-full">
-        <div class="flex w-full items-center justify-between py-2.5 px-2 text-xs h-[60px]">
+      <div class="flex flex-col w-full gap-3">
+        <div
+          class="flex w-full items-center justify-between py-2.5 px-2 text-[12.25px] h-[60px]"
+          v-for="n in 5"
+          :key="n"
+        >
           <div class="bg-[#ffffffbf] w-2/12 relative max-w-[80px] h-[60px] mr-3">
-            <span class="bg-primary h-5 w-5 center absolute top-0 left-0 text-black text-[10px]">1</span>
+            <span
+              class="bg-primary h-5 w-5 center absolute top-0 left-0 text-black text-[10px]"
+            >{{n}}</span>
           </div>
 
           <div class="w-5/12 flex flex-col items-start justify-between gap-1">
             <span
               class="text-[9.18px] text-center font-medium min-w-[70px] bg-[#ffffff40] py-0.5 leading-3 px-1.5"
             >SKU90400</span>
-            <span class="font-medium text-white">Huawei Smart Watch</span>
+            <span class="font-medium text-white text-[11px] md:text-xs">Huawei Smart Watch</span>
             <span class="font-light">$399.00</span>
           </div>
 
           <div class="w-5/12 flex flex-col items-start justify-between gap-1">
             <div class="flex items-center">
               <span class="w-[70px] leading-3">QTY:</span>
-              <span class="leading-3 font-semibold">129</span>
+              <span class="leading-3 font-medium">129</span>
             </div>
             <div class="flex items-center">
               <span class="w-[70px] leading-3">REVENUE:</span>
-              <span class="leading-3 font-semibold">129</span>
+              <span class="leading-3 font-medium">$51,471</span>
             </div>
             <div class="flex items-center">
               <span class="w-[70px] leading-3">PROFIT:</span>
-              <span class="leading-3 font-semibold">129</span>
+              <span class="leading-3 font-medium">$15,471</span>
             </div>
           </div>
-          <i class="las la-search -rotate-90 text-sm" />
+          <i class="las la-search -rotate-90 text-base" />
         </div>
       </div>
     </Card>
