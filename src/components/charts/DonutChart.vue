@@ -197,31 +197,7 @@
             </g>
           </g>
         </g>
-        <line
-          id="SvgjsLine16147"
-          x1="0"
-          y1="0"
-          x2="45"
-          y2="0"
-          stroke="#b6b6b6"
-          stroke-dasharray="0"
-          stroke-width="1"
-          stroke-linecap="butt"
-          class="apexcharts-ycrosshairs"
-        ></line>
-        <line
-          id="SvgjsLine16148"
-          x1="0"
-          y1="0"
-          x2="45"
-          y2="0"
-          stroke-dasharray="0"
-          stroke-width="0"
-          stroke-linecap="butt"
-          class="apexcharts-ycrosshairs-hidden"
-        ></line>
       </g>
-      <g id="SvgjsG16130" class="apexcharts-annotations"></g>
     </svg>
   </div>
 </template>
