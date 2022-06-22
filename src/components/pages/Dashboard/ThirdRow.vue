@@ -21,11 +21,18 @@
           </div>
 
           <div class="w-5/12 flex flex-col items-start justify-between gap-1">
-            <span
-              class="text-[9.18px] text-center font-medium min-w-[70px] bg-[#ffffff40] py-0.5 leading-3 px-1.5"
-            >SKU90400</span>
-            <span class="font-medium text-white">Huawei Smart Watch</span>
-            <span class="font-light">$399.00</span>
+            <div class="flex items-center">
+              <span class="w-[70px] leading-3">QTY:</span>
+              <span class="leading-3 font-semibold">129</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-[70px] leading-3">REVENUE:</span>
+              <span class="leading-3 font-semibold">129</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-[70px] leading-3">PROFIT:</span>
+              <span class="leading-3 font-semibold">129</span>
+            </div>
           </div>
           <i class="las la-search -rotate-90 text-sm" />
         </div>
