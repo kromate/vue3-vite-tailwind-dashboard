@@ -16,16 +16,25 @@
 
       <div class="flex flex-col w-full">
         <div
-          class="flex w-full items-center justify-between prod_table py-1 px-2 text-xs"
-          v-for="item in product"
+          class="flex w-full items-center justify-between prod_table py-2.5 px-2 text-xs"
+          v-for="item in activity"
         >
           <span class="w-6/12 flex items-center">
-            <div :class="['bg-primary', 'rounded-full h-1.5 w-1.5 mr-3']" />
+            <div
+              :class="[
+                item.bg ? 'bg-primary' : 'bg-[#ffffff80]',
+                'rounded-full h-1.5 w-1.5 mr-3',
+              ]"
+            />
             {{ item.details }}</span
           >
           <span class="w-3/12">{{ item.date }}</span>
           <div
-            class="bg-primary text-black text-[9.18px] font-medium min-w-[70px] center"
+            :class="[
+              item.bg ? 'bg-primary text-black' : 'bg-[#ffffff40] text-white',
+              ,
+              ' text-[9.18px] font-medium min-w-[70px] center',
+            ]"
           >
             {{ item.type }}
           </div>
@@ -37,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-const product = [
+const activity = [
   {
     details: "You have sold an item - $1,299",
     date: "just now",
