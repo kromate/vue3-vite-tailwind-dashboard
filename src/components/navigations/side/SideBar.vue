@@ -54,4 +54,7 @@ import {
 } from "@/composables/navigation/useSidebar";
 </script>
 
+<script lang="ts">
+export default {};
+</script>
 <style scoped></style>

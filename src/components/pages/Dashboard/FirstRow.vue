@@ -109,4 +109,8 @@ import PieChart from "@/components/charts/PieChart.vue";
 import DonutChart from "@/components/charts/DonutChart.vue";
 </script>
 
+<script lang="ts">
+export default {};
+</script>
+
 <style scoped></style>

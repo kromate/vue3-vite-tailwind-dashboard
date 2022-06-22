@@ -13,4 +13,8 @@ import TopBar from "@/components/navigations/top/TopBar.vue";
 import SideBar from "@/components/navigations/side/SideBar.vue";
 </script>
 
+<script lang="ts">
+export default {};
+</script>
+
 <style scoped></style>
