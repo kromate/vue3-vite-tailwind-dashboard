@@ -63,6 +63,7 @@ body {
     position: relative;
     min-height: 100vh;
     z-index: 9999;
+    overflow-x: hidden;
 }
 
 body:before {

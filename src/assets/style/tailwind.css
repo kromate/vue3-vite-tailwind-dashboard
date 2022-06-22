@@ -47,4 +47,7 @@
     .cols-2 {
         @apply w-full xl:w-1/2 p-2;
     }
+    .center {
+        @apply flex justify-center items-center;
+    }
 }
