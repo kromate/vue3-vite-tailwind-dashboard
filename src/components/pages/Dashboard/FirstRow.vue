@@ -83,7 +83,7 @@
       <div class="flex w-full items-center justify-between mb-3">
         <h3 class="font-semibold text-white">4.5TB</h3>
 
-        <CS class="w-[130px] md:w-[92px] h-9 text-[10px]" />
+        <DonutChart />
       </div>
       <div class="flex flex-col gap-0.5">
         <span class="text-xs text-[#ffffff80]">
@@ -106,6 +106,7 @@ import Card from "@/components/core/Card.vue";
 import BarChart from "@/components/charts/BarChart.vue";
 import LineChart from "@/components/charts/LineChart.vue";
 import PieChart from "@/components/charts/PieChart.vue";
+import DonutChart from "@/components/charts/DonutChart.vue";
 </script>
 
 <style scoped></style>
