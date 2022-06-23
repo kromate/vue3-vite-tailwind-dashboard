@@ -15,6 +15,8 @@
         <span class="card_title_1">TRAFFIC ANALYTICS</span>
         <i class="las la-expand" />
       </div>
+
+      <!-- <WorldMap /> -->
     </Card>
   </div>
 </template>

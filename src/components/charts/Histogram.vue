@@ -18,7 +18,7 @@ const chartOptions = {
 		background: "transparent",
 		type: "bar",
 		height: "auto",
-		foreColor: "#fff",
+		foreColor: "#ffffff80",
 		fontFamily: "'Chakra Petch', sans-serif",
 		offsetX: 0,
 		parentHeightOffset: 0,
@@ -31,7 +31,7 @@ const chartOptions = {
 		bar: {
 			horizontal: false,
 			borderRadius: 0,
-			columnWidth: "20%",
+			columnWidth: "50%",
 			barHeight: "100%",
 			dataLabels: {
 				position: "top",
@@ -43,20 +43,39 @@ const chartOptions = {
 	dataLabels: {
 		enabled: false,
 	},
+
 	stroke: {
-		show: false,
+		show: true,
+		curve: "smooth",
+		lineCap: "butt",
+		colors: "red",
+		width: 2,
+		dashArray: 0,
 	},
 	tooltip: {
 		shared: false,
 		intersect: false,
 	},
 	xaxis: {
+		labels: {
+			show: false,
+		},
+
+		axisBorder: {
+			show: true,
+			color: "#000",
+			height: 1,
+			width: "100%",
+			offsetX: 0,
+			offsetY: 0,
+		},
 		// categories: [
 		// 	2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012,
 		// 	2013, 2014, 2015, 2016, 2017,
 		// ],
 	},
 };
+
 const series = [
 	{
 		name: "MEMORY USAGE",

@@ -15,6 +15,7 @@
     "apexcharts": "^3.35.3",
     "chart.js": "^3.8.0",
     "gsap": "^3.10.4",
+    "leaflet": "^1.8.0",
     "unplugin-vue-components": "^0.19.6",
     "vue": "^3.2.25",
     "vue-chartjs": "^4.1.1",
