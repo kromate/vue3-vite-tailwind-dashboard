@@ -10,11 +10,6 @@
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import { onMounted } from "vue";
 
-onMounted(() => {
-  $(function () {
-    $("#world-map").vectorMap({ map: "world_mill" });
-  });
-});
 // import VueApexCharts from "vue3-apexcharts";
 
 // const chartOptions = {
