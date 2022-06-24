@@ -11,11 +11,14 @@ export const sidebarController = () => {
     })
 
     const toggleSidebar = () => { 
+        console.log(SideBarDisplay);
         if(SideBarDisplay === 'none'){
             document.querySelector<HTMLElement>('#sidebar')!.style.display = 'block'
+            SideBarDisplay = 'block'
         } else {
             document.querySelector<HTMLElement>('#sidebar')!.style.display = 'none'
+            SideBarDisplay = 'none'
         }
     }
-
+return {toggleSidebar}
 }

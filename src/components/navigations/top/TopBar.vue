@@ -4,7 +4,7 @@
     class="h-13 bg-headerBg fixed inset-x-0 top-0 flex z-50 px-4 items-center justify-between"
   >
     <div id="left-side" class="flex items-center">
-      <button id="menuBtn" class="transition-all duration-150">
+      <button id="menuBtn" class="transition-all duration-150" @click="toggleSidebar">
         <i
           class="las la-bars text-2xl text-gray-500 hover:text-white transition-all duration-500"
         ></i>
@@ -45,7 +45,10 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { sidebarController } from '../../../composables/utils/index';
+const {toggleSidebar} = sidebarController()
+</script>
 
 <style scoped>
 .logo {
