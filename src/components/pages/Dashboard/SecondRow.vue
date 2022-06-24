@@ -17,12 +17,15 @@
       </div>
 
       <!-- <WorldMap /> -->
+      <Calendar/>
     </Card>
   </div>
 </template>
 
 <script setup lang="ts">
 import Histogram from "@/components/charts/Histogram.vue";
+import Calendar from "@/components/utils/Calendar.vue";
+
 </script>
 
 <style scoped></style>

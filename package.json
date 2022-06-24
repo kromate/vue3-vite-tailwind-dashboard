@@ -20,7 +20,12 @@
     "vue": "^3.2.25",
     "vue-chartjs": "^4.1.1",
     "vue-router": "^4.0.15",
-    "vue3-apexcharts": "^1.4.1"
+    "vue3-apexcharts": "^1.4.1",
+    "@fullcalendar/core": "^5.11.0",
+    "@fullcalendar/daygrid": "^5.11.0",
+    "@fullcalendar/interaction": "^5.11.0",
+    "@fullcalendar/timegrid": "^5.11.0",
+    "@fullcalendar/vue3": "^5.11.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
