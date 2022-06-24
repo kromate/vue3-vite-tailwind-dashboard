@@ -1,5 +1,5 @@
 <template>
-  <aside class="aside hidden md:block">
+  <aside class="aside hidden md:block" id="sidebar">
     <div class="flex flex-col" v-for="(item, ind) in MenuList" :key="ind">
       <h3 class="menu_header">{{ item.name }}</h3>
 
@@ -46,12 +46,18 @@
 
 <script setup lang="ts">
 import { gsap } from "gsap";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { sidebarController } from '../../../composables/utils/index';
 import {
   MenuList,
   beforeEnter,
   enter,
 } from "@/composables/navigation/useSidebar";
+
+onMounted(() => {
+ sidebarController()
+});
+
 </script>
 
 <script lang="ts">
