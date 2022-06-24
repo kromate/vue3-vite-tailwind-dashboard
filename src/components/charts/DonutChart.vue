@@ -2,7 +2,7 @@
   <div>
     <svg
       id="SvgjsSvg16127"
-      width="111"
+      width="90"
       height="41.9"
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"

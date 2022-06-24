@@ -8,13 +8,19 @@
       <Histogram />
 
       <div class="flex justify-between w-full">
-<div class="flex flex-col">
-  
-</div>
+        <div class="w-1/2 flex items-center">
+          <DonutChart />
+          <div class="flex flex-col w-full gap-1.5">
+            <span class="text-[10px] text-[#ffffff80] font-semibold"
+              >DISK USAGE</span
+            >
+            <p class="text-lg">20.04 / 256 GB</p>
+            <progressBar />
+            <span class="text-xs text-[#ffffff80]">Last updated 1 min ago</span>
+          </div>
+        </div>
 
-<div class="flex flex-col">
-
-</div>
+        <div class="flex flex-col"></div>
       </div>
     </Card>
   </div>
@@ -25,16 +31,16 @@
         <i class="las la-expand" />
       </div>
 
-
-      <Calendar/>
+      <Calendar />
     </Card>
   </div>
 </template>
 
 <script setup lang="ts">
 import Histogram from "@/components/charts/Histogram.vue";
+import DonutChart from "@/components/charts/DonutChart.vue";
 import Calendar from "@/components/utils/Calendar.vue";
-
+import progressBar from "@/components/utils/progressBar.vue";
 </script>
 
 <style scoped></style>

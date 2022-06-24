@@ -31,7 +31,7 @@ const chartOptions = {
 		bar: {
 			horizontal: false,
 			borderRadius: 0,
-			columnWidth: "50%",
+			columnWidth: "60%",
 			barHeight: "100%",
 			dataLabels: {
 				position: "top",
