@@ -7,20 +7,46 @@
       </div>
       <Histogram />
 
-      <div class="flex justify-between w-full">
-        <div class="w-1/2 flex items-center">
-          <DonutChart />
-          <div class="flex flex-col w-full gap-1.5">
+      <div class="flex flex-col md:flex-row justify-between w-full mt-4 gap-4">
+        <div class="md:w-1/2 w-full flex items-center">
+          <DonutChart class="-ml-7" />
+          <div class="flex flex-col w-full gap-1">
             <span class="text-[10px] text-[#ffffff80] font-semibold"
               >DISK USAGE</span
             >
             <p class="text-lg">20.04 / 256 GB</p>
             <progressBar />
             <span class="text-xs text-[#ffffff80]">Last updated 1 min ago</span>
+            <div class="flex items-center w-full">
+              <div class="rounded-full h-1.5 w-1.5 mr-3 bg-primary" />
+              <span>DISK C</span> <span class="ml-auto"> 19.56GB</span>
+            </div>
+            <div class="flex items-center w-full">
+              <div class="rounded-full h-1.5 w-1.5 mr-3 bg-primary" />
+              <span>DISK D</span> <span class="ml-auto"> 0.50GB </span>
+            </div>
           </div>
         </div>
 
-        <div class="flex flex-col"></div>
+        <div class="md:w-1/2 w-full flex items-center">
+          <DonutChart class="-ml-7" />
+          <div class="flex flex-col w-full gap-1">
+            <span class="text-[10px] text-[#ffffff80] font-semibold"
+              >DISK USAGE</span
+            >
+            <p class="text-lg">20.04 / 256 GB</p>
+            <progressBar />
+            <span class="text-xs text-[#ffffff80]">Last updated 1 min ago</span>
+            <div class="flex items-center w-full">
+              <div class="rounded-full h-1.5 w-1.5 mr-3 bg-primary" />
+              <span>DISK C</span> <span class="ml-auto"> 19.56GB</span>
+            </div>
+            <div class="flex items-center w-full">
+              <div class="rounded-full h-1.5 w-1.5 mr-3 bg-primary" />
+              <span>DISK D</span> <span class="ml-auto"> 0.50GB </span>
+            </div>
+          </div>
+        </div>
       </div>
     </Card>
   </div>
