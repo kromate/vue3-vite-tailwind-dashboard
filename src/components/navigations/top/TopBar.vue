@@ -6,7 +6,7 @@
     <div id="left-side" class="flex items-center">
       <button id="menuBtn" class="transition-all duration-150" @click="toggleSidebar">
         <i
-          class="las la-bars text-2xl text-gray-500 hover:text-white transition-all duration-500"
+          class="las la-bars text-2xl text-gray-500 hover:text-white transition-all duration-300"
         ></i>
       </button>
 

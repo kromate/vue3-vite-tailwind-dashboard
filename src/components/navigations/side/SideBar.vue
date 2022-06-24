@@ -24,7 +24,7 @@
                   <i
                     :class="[
                       subItem.show.value ? 'rotate-180' : '',
-                      ' las la-sort-down text-md ml-auto transition-all duration-500',
+                      ' las la-sort-down text-md ml-auto transition-all duration-300',
                     ]"
                   />
                 </div>
