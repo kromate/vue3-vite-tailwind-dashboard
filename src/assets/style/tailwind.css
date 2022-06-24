@@ -39,13 +39,13 @@
         @apply font-semibold uppercase text-xs;
     }
     .row {
-        @apply grid;
+        @apply grid gap-4;
     }
     .cols-4 {
-        @apply grid-cols-1 h-full sm:grid-cols-2 xl:grid-cols-4 p-2;
+        @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4;
     }
     .cols-2 {
-        @apply w-full h-full xl:w-1/2 p-2;
+        @apply grid grid-cols-1 xl:grid-cols-2 gap-4;
     }
     .center {
         @apply flex justify-center items-center;

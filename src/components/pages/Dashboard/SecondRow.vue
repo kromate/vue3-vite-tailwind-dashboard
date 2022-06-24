@@ -5,8 +5,17 @@
         <span class="card_title_1">SERVER STATS</span>
         <i class="las la-expand" />
       </div>
-
       <Histogram />
+
+      <div class="flex justify-between w-full">
+<div class="flex flex-col">
+  
+</div>
+
+<div class="flex flex-col">
+
+</div>
+      </div>
     </Card>
   </div>
   <div class="h-full">

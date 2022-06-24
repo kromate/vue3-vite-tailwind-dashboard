@@ -46,7 +46,7 @@
     </Card>
   </div>
 
-  <div class="h-full ">
+  <div class="h-full">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
         <span class="card_title_1">ACTIVITY LOG</span>

@@ -1,12 +1,9 @@
 <template>
   <DefaultLayout>
     <div class="row">
-      <div class="cols-4">
-        <FirstRow />
-      </div>
-
-      <SecondRow />
-      <ThirdRow />
+      <div class="cols-4"><FirstRow /></div>
+      <div class="cols-2"><SecondRow /></div>
+      <div class="cols-2"><ThirdRow /></div>
     </div>
   </DefaultLayout>
 </template>
@@ -20,3 +17,4 @@ import ThirdRow from "@/components/pages/Dashboard/ThirdRow.vue";
 </script>
 
 <style scoped></style>
+ta
