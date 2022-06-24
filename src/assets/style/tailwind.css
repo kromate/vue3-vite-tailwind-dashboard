@@ -33,7 +33,7 @@
     }
     .app {
         height: calc(100vh - 3.25rem);
-        @apply flex-1 md:ml-[16.875rem] p-4 transition-all duration-500;
+        @apply flex-1 md:ml-[16.875rem] p-4 transition-all duration-300 ease-out;
     }
     .card_title_1 {
         @apply font-semibold uppercase text-xs;
