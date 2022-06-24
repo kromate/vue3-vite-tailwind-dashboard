@@ -11,7 +11,6 @@ export const sidebarController = () => {
     })
 
     const toggleSidebar = () => { 
-        console.log(SideBarDisplay);
         if(SideBarDisplay === 'none'){
             document.querySelector<HTMLElement>('#sidebar')!.style.display = 'block'
             document.querySelector<HTMLElement>('main#app')!.style.marginLeft = '270px'
@@ -22,5 +21,6 @@ export const sidebarController = () => {
             SideBarDisplay = 'none'
         }
     }
+    
 return {toggleSidebar}
 }
