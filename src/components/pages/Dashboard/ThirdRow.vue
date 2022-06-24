@@ -40,7 +40,7 @@
               <span class="leading-3 font-medium">$15,471</span>
             </div>
           </div>
-          <i class="las la-search -rotate-90 text-base" />
+          <i class="las la-search -rotate-90 text-base hidden md:block" />
         </div>
       </div>
     </Card>
@@ -75,7 +75,7 @@
               ' text-[9.18px] font-medium min-w-[70px] center',
             ]"
           >{{ item.type }}</div>
-          <i class="las la-search -rotate-90" />
+          <i class="las la-search -rotate-90 hidden md:block" />
         </div>
       </div>
     </Card>
