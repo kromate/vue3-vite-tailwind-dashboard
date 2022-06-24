@@ -11,12 +11,12 @@
   </div>
   <div class="h-full cols-2">
     <Card>
-      <div class="flex w-full items-center justify-between mb-3">
-        <span class="card_title_1">TRAFFIC ANALYTICS</span>
+      <div class="flex w-full items-center justify-between mb-5">
+        <span class="card_title_1">UPCOMING SCHEDULES</span>
         <i class="las la-expand" />
       </div>
 
-      <!-- <WorldMap /> -->
+
       <Calendar/>
     </Card>
   </div>

@@ -54,9 +54,8 @@ import {
   enter,
 } from "@/composables/navigation/useSidebar";
 
-onMounted(() => {
  sidebarController()
-});
+
 
 </script>
 

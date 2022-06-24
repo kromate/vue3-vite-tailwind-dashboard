@@ -28,9 +28,9 @@
   display: flex;
   flex-direction: column;
   min-width: 0px;
-  height: var(--bs-card-height);
+  height: 100%;
   overflow-wrap: break-word;
-  background-color: var(--bs-card-bg);
+
   background-clip: border-box;
 }
 
