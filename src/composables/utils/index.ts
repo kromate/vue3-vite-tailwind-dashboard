@@ -14,9 +14,11 @@ export const sidebarController = () => {
         console.log(SideBarDisplay);
         if(SideBarDisplay === 'none'){
             document.querySelector<HTMLElement>('#sidebar')!.style.display = 'block'
+            document.querySelector<HTMLElement>('main#app')!.style.marginLeft = '270px'
             SideBarDisplay = 'block'
         } else {
             document.querySelector<HTMLElement>('#sidebar')!.style.display = 'none'
+             document.querySelector<HTMLElement>('main#app')!.style.marginLeft = '0px'
             SideBarDisplay = 'none'
         }
     }

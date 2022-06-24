@@ -2,7 +2,7 @@
   <TopBar />
   <div class="flex pt-12">
     <SideBar />
-    <main class="app">
+    <main class="app" id="app">
       <slot />
     </main>
   </div>

@@ -1,4 +1,5 @@
 <template>
+<transition>
   <aside class="aside hidden md:block" id="sidebar">
     <div class="flex flex-col" v-for="(item, ind) in MenuList" :key="ind">
       <h3 class="menu_header">{{ item.name }}</h3>
@@ -42,6 +43,8 @@
       </div>
     </div>
   </aside>
+</transition>
+
 </template>
 
 <script setup lang="ts">

@@ -29,11 +29,11 @@
         @apply flex items-center ml-14 text-[#ffffff7f] hover:text-white;
     }
     .aside {
-        @apply fixed w-[16.875rem] top-13 z-[1010] left-0 bottom-0 overflow-y-auto;
+        @apply fixed w-[16.875rem] top-13 z-[1010] left-0 bottom-0 overflow-y-auto transition-all duration-500 ease-out;
     }
     .app {
         height: calc(100vh - 3.25rem);
-        @apply flex-1 md:ml-[16.875rem] p-4;
+        @apply flex-1 md:ml-[16.875rem] p-4 transition-all duration-500;
     }
     .card_title_1 {
         @apply font-semibold uppercase text-xs;
