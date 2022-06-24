@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full cols-2">
+  <div class="h-full ">
     <Card>
       <div class="flex w-full items-center justify-between mb-6">
         <span class="card_title_1">TOP PRODUCTS</span>
@@ -46,7 +46,7 @@
     </Card>
   </div>
 
-  <div class="h-full cols-2">
+  <div class="h-full ">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
         <span class="card_title_1">ACTIVITY LOG</span>

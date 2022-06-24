@@ -1,7 +1,10 @@
 <template>
   <DefaultLayout>
     <div class="row">
-      <FirstRow />
+      <div class="cols-4">
+        <FirstRow />
+      </div>
+
       <SecondRow />
       <ThirdRow />
     </div>

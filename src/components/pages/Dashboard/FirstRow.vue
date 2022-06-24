@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full cols-4">
+  <div class="h-full">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
         <span class="card_title_1">SITE VISITORS</span>
@@ -24,7 +24,7 @@
     </Card>
   </div>
 
-  <div class="h-full cols-4">
+  <div class="h-full">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
         <span class="card_title_1">STORE SALES</span>
@@ -49,7 +49,7 @@
     </Card>
   </div>
 
-  <div class="h-full cols-4">
+  <div class="h-full">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
         <span class="card_title_1">NEW MEMBERS</span>
@@ -74,7 +74,7 @@
     </Card>
   </div>
 
-  <div class="h-full cols-4">
+  <div class="h-full">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
         <span class="card_title_1">BANDWIDTH</span>

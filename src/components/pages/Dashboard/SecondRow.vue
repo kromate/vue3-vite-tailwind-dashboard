@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full cols-2">
+  <div class="h-full">
     <Card>
       <div class="flex w-full items-center justify-between mb-3">
         <span class="card_title_1">SERVER STATS</span>
@@ -9,7 +9,7 @@
       <Histogram />
     </Card>
   </div>
-  <div class="h-full cols-2">
+  <div class="h-full">
     <Card>
       <div class="flex w-full items-center justify-between mb-5">
         <span class="card_title_1">UPCOMING SCHEDULES</span>
