@@ -19,7 +19,7 @@
             <div class="menu_link">
               <i :class="[subItem.icon, 'text-xl mr-3']" />
               {{ subItem.name }}
-              <i class="las la-sort-down text-md ml-auto" />
+              <i :class="[subItem.show.value? 'rotate-180':'', ' las la-sort-down text-md ml-auto transition-all duration-500']" />
             </div>
           </span>
 
