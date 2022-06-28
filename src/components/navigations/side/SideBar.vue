@@ -82,8 +82,10 @@ export default {};
   transition: all 0.5s ease;
 }
 
-.router-link-active.router-link-exact-active {
-  @apply text-white
-  
-}
+// .router-link-active.router-link-exact-active {
+//   @apply text-white;
+//   .las{
+//      @apply text-primary
+//   }
+// }
 </style>
