@@ -11,21 +11,23 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@fullcalendar/core": "^5.11.0",
+    "@fullcalendar/daygrid": "^5.11.0",
+    "@fullcalendar/interaction": "^5.11.0",
+    "@fullcalendar/timegrid": "^5.11.0",
+    "@fullcalendar/vue3": "^5.11.0",
     "@vueuse/core": "^8.6.0",
     "apexcharts": "^3.35.3",
     "chart.js": "^3.8.0",
     "gsap": "^3.10.4",
     "leaflet": "^1.8.0",
+    "sass": "^1.53.0",
+    "scss": "^0.2.4",
     "unplugin-vue-components": "^0.19.6",
     "vue": "^3.2.25",
     "vue-chartjs": "^4.1.1",
     "vue-router": "^4.0.15",
-    "vue3-apexcharts": "^1.4.1",
-    "@fullcalendar/core": "^5.11.0",
-    "@fullcalendar/daygrid": "^5.11.0",
-    "@fullcalendar/interaction": "^5.11.0",
-    "@fullcalendar/timegrid": "^5.11.0",
-    "@fullcalendar/vue3": "^5.11.0"
+    "vue3-apexcharts": "^1.4.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",

@@ -69,7 +69,8 @@ import {
 <script lang="ts">
 export default {};
 </script>
-<style scoped>
+
+<style scoped lang="scss">
 .slide-enter-from,
 .slide-leave-to {
   opacity: 0;
@@ -79,5 +80,10 @@ export default {};
 .slide-enter-active,
 .slide-leave-active {
   transition: all 0.5s ease;
+}
+
+.router-link-active.router-link-exact-active {
+  @apply text-white
+  
 }
 </style>
