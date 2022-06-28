@@ -1,14 +1,18 @@
 import { createApp } from 'vue'
-import './assets/style/tailwind.css'
 import App from './App.vue'
-import { router } from './router/index'
-import { RegisterComponents } from './plugins/Components'
-// import 
+import '@/assets/style/tailwind.css'
+import { router as setupRouter } from '@/router'
+import { RegisterComponents } from './plugins/components'
 
-const app = createApp(App);
-RegisterComponents(app)
-app.use(router)
-app.mount('#app')
+const init = async () => {
+	const router = await setupRouter
+	const app = createApp(App)
+	await RegisterComponents(app)
+	// await router.isReady()
 
+	app.use(router).mount('#app')
+}
+
+init().then()
 
 // merge sort 
